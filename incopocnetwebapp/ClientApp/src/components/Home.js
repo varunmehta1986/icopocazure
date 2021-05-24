@@ -11,7 +11,7 @@ export class Home extends Component {
     }
 
   async getEnvironment() {
-      const response = await fetch('/api/environment');
+      const response = await fetch('/api/appsettings');
       console.log(response);
     const data = await response.text();
     this.setState({environment:data});
@@ -22,7 +22,7 @@ export class Home extends Component {
     return (
       <div>
         <h1>Hello, world!</h1>
-        <h2>{this.state.environment}</h2>
+        <h4>{this.state.environment}</h4>
       </div>
     );
   }
