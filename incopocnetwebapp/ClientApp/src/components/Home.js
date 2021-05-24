@@ -22,7 +22,7 @@ export class Home extends Component {
     return (
       <div>
         <h1>Hello, world!</h1>
-        <h4>{this.state.environment}</h4>
+        <p>{this.state.environment}</p>
       </div>
     );
   }
